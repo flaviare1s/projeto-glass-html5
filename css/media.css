@@ -1,24 +1,52 @@
 @charset "UTF-8";
 
 div#tv-radio {
-    width: 900px;
-    height: 580px;
-    margin: auto;
-    background: url(../imagens/radio-tv.png) no-repeat;
+  width: 900px;
+  height: 580px;
+  margin: auto;
+  background: url(../imagens/radio-tv.png) no-repeat;
 }
 
 audio#musica {
-    display: block;
-    position: relative;
-    left: 575px;
-    top: 500px;
-    width: 300px;
+  display: block;
+  position: relative;
+  left: 575px;
+  top: 500px;
+  width: 300px;
 }
 
 video#filme {
-    display: block;
-    position: relative;
-    left: 90px;
-    top: 85px;
-    width: 440px;
+  display: block;
+  position: relative;
+  left: 90px;
+  top: 85px;
+  width: 440px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  div#tv-radio {
+    width: 100%;
+    height: auto;
+    background: none;
+    padding: 10px;
+  }
+
+  audio#musica {
+    position: static;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  video#filme {
+    position: static;
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div#tv-radio {
+    padding: 5px;
+  }
 }

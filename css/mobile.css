@@ -1,0 +1,364 @@
+/* Media Queries para Responsividade Mobile */
+@media screen and (max-width: 768px) {
+  /* Controle de overflow global */
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Interface principal */
+  div#interface {
+    width: calc(100% - 20px);
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 10px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  /* Cabeçalho */
+  header#cabecalho {
+    height: auto;
+    background-size: 150px;
+    background-position: center 10px;
+    padding: 120px 10px 10px 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  header#cabecalho h1 {
+    font-size: 20pt;
+    padding: 10px 10px 0 10px;
+  }
+
+  header#cabecalho h2 {
+    font-size: 12pt;
+    padding: 5px 10px;
+  }
+
+  /* Ocultar imagem do ícone em mobile */
+  header#cabecalho img#icone {
+    display: none;
+  }
+
+  /* Menu */
+  nav#menu {
+    padding: 0 5px;
+  }
+
+  nav#menu ul {
+    position: static;
+    text-align: center;
+    padding: 0 10px;
+    margin: 10px 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  nav#menu li {
+    display: inline-block;
+    padding: 8px 10px;
+    margin: 5px 2px;
+    font-size: 10pt;
+    max-width: calc(100% - 10px);
+    box-sizing: border-box;
+  }
+
+  /* Seção principal */
+  section#corpo {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+    border-right: none;
+    padding: 15px;
+    margin: 0;
+    border-bottom: 1px solid #606060;
+    box-sizing: border-box;
+  }
+
+  section#corpo-full {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  /* Aside lateral */
+  aside#lateral {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+    margin-top: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  /* Tabela de especificações */
+  table#tabelaspec {
+    width: calc(100% - 10px);
+    max-width: 100%;
+    font-size: 10pt;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+
+  table#tabelaspec td {
+    padding: 5px;
+  }
+
+  /* Ajuste de parágrafos */
+  p {
+    text-indent: 30px;
+    padding: 0 5px;
+    margin: 10px 0;
+  }
+
+  /* Ajuste de vídeos */
+  video {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Imagens responsivas */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Formulários */
+  form {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  input,
+  textarea,
+  select {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  fieldset {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* iframes */
+  iframe {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Figuras com legendas */
+  figure.foto-legenda {
+    max-width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+
+  figure.foto-legenda img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Artigos */
+  article {
+    max-width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  /* Headers */
+  header {
+    max-width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  /* Parágrafos */
+  p {
+    max-width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  /* Listas */
+  ul,
+  ol {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Outros elementos que podem causar overflow */
+  pre,
+  code {
+    max-width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+  }
+
+  hr {
+    max-width: calc(100% - 20px);
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+
+  /* Seção de conteúdo (specs) */
+  section#conteudo {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Divs especiais */
+  div#tv-radio {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Álbum de fotos */
+  ul#album-fotos {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  ul#album-fotos li {
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Ajustes para telas muito pequenas */
+  body {
+    overflow-x: hidden;
+  }
+
+  div#interface {
+    padding: 8px;
+    width: calc(100% - 16px);
+  }
+
+  header#cabecalho {
+    padding: 100px 8px 10px 8px;
+    background-size: 120px;
+  }
+
+  header#cabecalho h1 {
+    font-size: 16pt;
+  }
+
+  header#cabecalho h2 {
+    font-size: 10pt;
+  }
+
+  nav#menu li {
+    display: block;
+    margin: 5px auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  section#corpo {
+    padding: 10px;
+  }
+
+  section#corpo-full {
+    padding: 10px;
+  }
+
+  aside#lateral {
+    padding: 10px;
+  }
+
+  article#noticia-pricipal h2 {
+    font-size: 11pt;
+  }
+
+  header#cabecalho-artigo h1 {
+    font-size: 16pt;
+  }
+
+  aside#lateral h1 {
+    font-size: 16pt;
+  }
+
+  aside#lateral h2 {
+    font-size: 11pt;
+  }
+
+  table#tabelaspec {
+    font-size: 9pt;
+  }
+
+  table#tabelaspec td {
+    padding: 3px;
+  }
+
+  p {
+    text-indent: 15px;
+    padding: 0 8px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Garantir que textos longos quebrem */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 0 5px;
+  }
+
+  /* Ajustar elementos específicos */
+  form {
+    padding: 10px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 14px;
+  }
+
+  fieldset {
+    padding: 8px;
+    margin: 5px;
+  }
+
+  section#conteudo {
+    padding: 10px;
+  }
+
+  div#tv-radio {
+    padding: 10px;
+  }
+
+  ul#album-fotos {
+    padding: 10px;
+  }
+
+  article {
+    padding: 0 8px;
+  }
+}
